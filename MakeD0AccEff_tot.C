@@ -14,9 +14,9 @@ void MakeD0AccEff(int bunch=16,int nameCase=0){
     
 
     TString suffix = "EvWithD";
-    TFile *_file16 = TFile::Open("../../../../../../../../newStat_July/MC_july/D0efficiencies/../rootfiles/output_EvWithD_16merged.root");//i pesi sono gli stessi per D0 e Lc
-    TFile *_file17 = TFile::Open("../../../../../../../../newStat_July/MC_july/D0efficiencies/../rootfiles/output_EvWithD_17merged.root");
-    TFile *_file18 = TFile::Open("../../../../../../../../newStat_July/MC_july/D0efficiencies/../rootfiles/output_EvWithD_18merged.root");
+    TFile *_file16 = TFile::Open("rootfiles/output_EvWithD_16merged.root");//i pesi sono gli stessi per D0 e Lc
+    TFile *_file17 = TFile::Open("rootfiles/output_EvWithD_17merged.root");
+    TFile *_file18 = TFile::Open("rootfiles/output_EvWithD_18merged.root");
     TH1F *hWeights;
     if(bunch==16) hWeights = (TH1F*)_file16->Get("Weights0");
     else if(bunch==17) hWeights = (TH1F*)_file17->Get("Weights0");

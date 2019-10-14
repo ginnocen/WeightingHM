@@ -7,7 +7,7 @@ void doDsEffMergingBunches(int nameCase=0) {
     TString suffix = "EvWithD";
 
     
-    TString fileNameAcc = "../../../../../../../../MC_6Maggio/D0Acc_FONLL5mio.root";
+    TString fileNameAcc = "D0Acc_FONLL5mio.root";
     TFile *fileacc = TFile::Open(fileNameAcc.Data());
     TH1D *hAcc = (TH1D*)fileacc->Get("hAcc");
 
